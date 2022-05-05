@@ -89,7 +89,7 @@ nav .endGame {
         align-items: center;
         padding-top: 30px;
     }
-    .imgHands {
+    #game .imgHands {
         max-width:70px;
     }
 
@@ -103,14 +103,203 @@ nav .endGame {
 
 /* affichage du résulat du match */
 
+#resultGame {
+    height:90vh;
+    color: #fff;
+}
+.bgCloud{
+    background-image: url('../img/lampe-nuage.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#resultGame .lineHands {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+/* #resultGame .bgCloud {
+    font-size:1.5em;
+    animation: fadein 3s; 
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    #resultGame .lineHands {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .imgHands {
+        max-width:70px;
+    }
+
+    #resultGame .bgCloud {
+        height: 65vh;
+    }
+    
+}
+
 
 /* tu as gagné ! */
+#win {
+    height:90vh;
+    color: #fff;
+}
+.bgWin{
+    background-image: url('../img/gagne.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#win .lineHands {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #win .lineHands {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .imgHands {
+        max-width:70px;
+    }
+
+    #win .bgwin {
+        height: 65vh;
+    }
+    
+}
+
 
 
 /* tu as perdu */
+#lose {
+    height:90vh;
+    color: #fff;
+}
+.bgLose{
+    background-image: url('../img/perdu.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#lose .lineHands {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #lose .lineHands {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .imgHands {
+        max-width:70px;
+    }
+
+    #lose .bgLose {
+        height: 65vh;
+    }
+    
+}
 
 
 /* match nul */
+#equality {
+    height:90vh;
+    color: #fff;
+}
+.bgEquality{
+    background-image: url('../img/egalite.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#equality .lineHands {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #equality .lineHands {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .imgHands {
+        max-width:70px;
+    }
+
+    #equality .bgEquality {
+        height: 65vh;
+    }
+    
+}
 
 
 /* score final */
