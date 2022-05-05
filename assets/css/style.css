@@ -1,8 +1,14 @@
 /* général */
 @import url(https://fr.allfont.net/allfont.css?fonts=walt-disney-script);
+*{
+    margin: 0;
+    padding: 0;
+}
 .bgBlue {
     background-color: #3DBBC9;}
-
+body{
+    font-family: 'Walt Disney Script', arial;
+}
 /* header avec navbar */
 
 
