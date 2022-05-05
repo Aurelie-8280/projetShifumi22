@@ -13,7 +13,7 @@
 <body>
     <!--______________________________ 
         header avec navbar -->
-    <header>
+    <header class="bgBlue">
             <nav>
                 <img src="assets/img/close_game.png" alt="image croix" class="endGame">
                 <h1>MAGIC SHIFUMI</h1>
@@ -32,8 +32,40 @@
         </section>
     <!--___________________________________ 
         affichage propositions de combat -->
-    <section id="game">
-
+    <section id="game" class="container-fluid bgBlue">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-12 col-md-6 text-center bgImgMirror order-0 order-md-1">
+                    <div class="textWelcome">
+                        <div class="welcome">
+                        </div>
+                        <div>
+                            pour jouer,
+                        </div>
+                        <div>
+                            clique
+                        </div>
+                        <div>
+                            sur un gant
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 lineHands order-1 order-md-0 text-center">
+                    <div class="stone">
+                        <img src="assets/img/pierre.png" class="imgHands">
+                        <div class="pt-3">pierre</div>
+                    </div>
+                    <div class="paper imgHands">
+                        <img src="assets/img/feuille.png" class="imgHands">
+                        <div class="pt-3">feuille</div>
+                    </div>
+                    <div class="scissors ">
+                        <img src="assets/img/ciseaux.png" class="imgHands">
+                        <div class="pt-3">ciseaux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--________________________________
         affichage du résulat du match -->

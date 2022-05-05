@@ -5,18 +5,101 @@
     padding: 0;
 }
 .bgBlue {
-    background-color: #3DBBC9;}
+    background-color: #3DBBC9;
+}
 body{
     font-family: 'Walt Disney Script', arial;
+    text-transform: uppercase;
 }
 /* header avec navbar */
+nav {
+    font-size:2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding:0 20px;
+}
 
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fff;
+    font-size: 2.1em;
+}
+
+nav .endGame {
+    max-height: 50px;
+}
 
 /* modal règle du jeu */
 
 
 /* affichage propositions de combat */
+#game {
+    height:90vh;
+    color: #fff;
+}
 
+#game .bgImgMirror {
+    background-image: url('../img/miror-2.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#game .lineHands {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+#game .textWelcome {
+    font-size:1.5em;
+    animation: fadein 3s; 
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #game .lineHands {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .imgHands {
+        max-width:70px;
+    }
+
+    #game .bgImgMirror {
+        height: 60vh;
+    }
+    #game .textWelcome {
+        font-size:1em;
+    }
+}
 
 /* affichage du résulat du match */
 
