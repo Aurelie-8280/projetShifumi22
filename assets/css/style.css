@@ -20,6 +20,7 @@ nav {
     align-items: center;
     height: 70px;
     padding:0 20px;
+    position: sticky;
 }
 
 nav a {
@@ -43,6 +44,7 @@ nav .endGame {
 #game {
     height:90vh;
     color: #fff;
+    display: none;
 }
 
 #game .bgImgMirror {
@@ -114,3 +116,6 @@ nav .endGame {
 
 
 /* score final */
+#score .bgImgCastleEnd {
+    background-image: url(../img/castle-test.jpg);
+}
