@@ -23,6 +23,10 @@ body{
     text-transform: uppercase;
 }
 /* header avec navbar */
+header {
+    display: none;
+}
+
 nav {
     font-size:2em;
     color: #fff;
@@ -31,6 +35,7 @@ nav {
     align-items: center;
     height: 70px;
     padding:0 20px;
+    position: sticky;
 }
 
 nav a {
@@ -48,12 +53,84 @@ nav .endGame {
 }
 
 /* modal règle du jeu */
+#gameRule {
+    display: none;
+}
+
+dialog {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.25);
+    max-width: 90vw;
+    margin-left: 35%;
+    margin-top:120px;
+}
+
+
+/* enter name */
+
+
+.bgColorName{
+    width: 100vw;
+    height: 100vh;
+    background-color:#3DBBC9;
+    
+
+}
+.gameName{
+    text-align: center;
+    display:flex;
+    position: absolute;
+    color: #ffffff;
+    padding-left: 310px;
+    font-size: 40px;
+    padding-top: 5px;
+}
+.castle{
+    background-image: url('../img/Château.jpg');
+    height:100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    justify-content: right;
+    align-items: center;
+}
+.mickeyHead{
+    
+    opacity: 60%;
+    height:50%;
+    margin-right: 90px;
+} 
+
+.yourPseudo{
+    
+    flex-direction: column;
+    display: flex;
+    margin-right: 200px;
+    position: absolute;
+    color: #ffffff;
+}
+.yourPseudo>label{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.yourPseudo>button{
+    margin-top: 5px;
+    border-radius: 5px;
+
+
+}
+
 
 
 /* affichage propositions de combat */
 #game {
     height:90vh;
     color: #fff;
+    display: none;
 }
 
 #game .bgImgMirror {
@@ -110,6 +187,15 @@ nav .endGame {
 }
 
 @media screen and (max-width: 768px) {
+    .mickeyHead{
+        display: none;
+    }
+
+
+    .yourPseudo {
+        justify-content: center;
+    }
+    
     #game .lineHands {
         flex-direction: row;
         align-items: center;
@@ -132,6 +218,7 @@ nav .endGame {
 #resultGame {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgCloud{
     background-image: url('../img/lampe-nuage.png');
@@ -193,6 +280,7 @@ nav .endGame {
 #win {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgWin{
     background-image: url('../img/gagne.png');
@@ -240,6 +328,7 @@ nav .endGame {
 #lose {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgLose{
     background-image: url('../img/perdu.png');
@@ -286,6 +375,7 @@ nav .endGame {
 #equality {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgEquality{
     background-image: url('../img/egalite.png');
