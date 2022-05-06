@@ -38,6 +38,57 @@ nav .endGame {
 
 /* modal règle du jeu */
 
+.bgColorName{
+    width: 100vw;
+    height: 100vh;
+    background-color:#3DBBC9;
+    
+
+}
+
+.castle{
+    background-image: url('../img/Château.jpg');
+    height:100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    justify-content: right;
+    align-items: center;
+}
+.mickeyHead{
+    
+    opacity: 60%;
+    height:50%;
+    margin-right: 160px;
+} 
+
+.yourPseudo{
+    
+    flex-direction: column;
+    display: flex;
+    margin-right: 320px;
+    position: absolute;
+    color: #ffffff;
+}
+.yourPseudo>label{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.yourPseudo>button{
+    margin-top: 5px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+    
+    
+    
+
 
 /* affichage propositions de combat */
 #game {
@@ -84,6 +135,15 @@ nav .endGame {
 }
 
 @media screen and (max-width: 768px) {
+    .mickeyHead{
+        display: none;
+    }
+
+
+    .yourPseudo {
+        justify-content: center;
+    }
+    
     #game .lineHands {
         flex-direction: row;
         align-items: center;
