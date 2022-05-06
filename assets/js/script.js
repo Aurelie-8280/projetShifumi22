@@ -23,11 +23,16 @@ var stone=document.querySelector('.stoneImg')
 var paper=document.querySelector('.paperImg')
 var scissors=document.querySelector('.scissorsImg')
 var choiceResult=document.querySelector('.choiceResult');
+var scorePlayer=0;
+var scoreComputer=0;
+var playerScore=document.querySelector('.machinScore');
+var computerScore=document.querySelector('.computerScore');
+
 // var  timerResult=setTimeout(timerObject,1000);
 textGameResult =document.querySelector('.textGameResult');
 
 
-// écoute du choix de l'utilisateur
+// écoute du choix de l'utilisateur STONE
 stone.addEventListener('click', function(){
     machinChoice=document.querySelector('.machinChoice');
     divcomputerChoice=document.querySelector('.computerChoice')
@@ -50,13 +55,83 @@ stone.addEventListener('click', function(){
     } else if(signComputer == 'paper' ){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
         textGameResult.innerHTML='Perdu!';
+        scoreComputer++;
+        computerScore.innerHTML=scoreComputer;
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
         textGameResult.innerHTML='Gagné!';
+        scorePlayer++;
+        playerScore.innerHTML= scorePlayer;
+
 
     }
 })
 
 
 
+// écoute du choix de l'utilisateur PAPER
+paper.addEventListener('click', function(){
+    machinChoice=document.querySelector('.machinChoice');
+    divcomputerChoice=document.querySelector('.computerChoice')
+    machinChoice.innerHTML =paper.outerHTML;
+
+
+    // tableau pour réponse aléatoire
+    var computerChoice= ['stone', 'paper', 'scissors'];
+
+    // paramètres rép aléatoire
+    var computerChosenSign=Math.floor(Math.random()*computerChoice.length);
+    var signComputer=computerChoice[computerChosenSign];
+
+    if(signComputer == 'paper' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
+        textGameResult.innerHTML='Egalité!';
+        
+    } else if(signComputer == 'stone' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
+        textGameResult.innerHTML='Gagné';
+        scorePlayer++;
+        playerScore.innerHTML= scorePlayer;
+
+    } else if (signComputer == 'scissors' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
+        textGameResult.innerHTML='Perdu!';
+        scoreComputer++;
+        computerScore.innerHTML=scoreComputer;
+
+    }
+})
+
+// écoute du choix de l'utilisateur SCISSORS
+scissors.addEventListener('click', function(){
+    machinChoice=document.querySelector('.machinChoice');
+    divcomputerChoice=document.querySelector('.computerChoice')
+    machinChoice.innerHTML =scissors.outerHTML;
+
+
+    // tableau pour réponse aléatoire
+    var computerChoice= ['stone', 'paper', 'scissors'];
+
+    // paramètres rép aléatoire
+    var computerChosenSign=Math.floor(Math.random()*computerChoice.length);
+    var signComputer=computerChoice[computerChosenSign];
+
+    if(signComputer == 'paper' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
+        textGameResult.innerHTML='Gagné!';
+        scorePlayer++;
+        playerScore.innerHTML= scorePlayer;
+        
+    } else if(signComputer == 'stone' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
+        textGameResult.innerHTML='Perdu';
+        scoreComputer++;
+        computerScore.innerHTML=scoreComputer;
+
+    } else if (signComputer == 'scissors' ){
+        divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
+        textGameResult.innerHTML='Egalité!';
+
+    }
+})
