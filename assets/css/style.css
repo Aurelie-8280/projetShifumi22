@@ -44,7 +44,7 @@ nav .endGame {
 #game {
     height:90vh;
     color: #fff;
-    display: none;
+    /* display: none; */
 }
 
 #game .bgImgMirror {
@@ -305,6 +305,3 @@ nav .endGame {
 
 
 /* score final */
-#score .bgImgCastleEnd {
-    background-image: url(../img/castle-test.jpg);
-}
