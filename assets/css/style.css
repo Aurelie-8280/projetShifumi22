@@ -41,7 +41,6 @@ nav .endGame {
 dialog {
     background-color: #ffffff;
     text-align: center;
-
     padding: 2rem;
     border-radius: 6px;
     box-shadow: 0 0 40px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.25);
@@ -60,7 +59,9 @@ dialog {
     
 
 }
-
+.gameName{
+    text-align: center;
+}
 .castle{
     background-image: url('../img/Château.jpg');
     height:100%;
