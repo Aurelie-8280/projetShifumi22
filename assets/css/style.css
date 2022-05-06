@@ -12,6 +12,10 @@ body{
     text-transform: uppercase;
 }
 /* header avec navbar */
+header {
+    display: none;
+}
+
 nav {
     font-size:2em;
     color: #fff;
@@ -20,6 +24,7 @@ nav {
     align-items: center;
     height: 70px;
     padding:0 20px;
+    position: sticky;
 }
 
 nav a {
@@ -37,6 +42,9 @@ nav .endGame {
 }
 
 /* modal règle du jeu */
+#gameRule {
+    display: none;
+}
 
 dialog {
     background-color: #ffffff;
@@ -51,6 +59,7 @@ dialog {
 
 
 /* enter name */
+
 
 .bgColorName{
     width: 100vw;
@@ -100,16 +109,11 @@ dialog {
 
 
 
-
-    
-    
-    
-
-
 /* affichage propositions de combat */
 #game {
     height:90vh;
     color: #fff;
+    display: none;
 }
 
 #game .bgImgMirror {
@@ -182,6 +186,7 @@ dialog {
 #resultGame {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgCloud{
     background-image: url('../img/lampe-nuage.png');
@@ -243,6 +248,7 @@ dialog {
 #win {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgWin{
     background-image: url('../img/gagne.png');
@@ -290,6 +296,7 @@ dialog {
 #lose {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgLose{
     background-image: url('../img/perdu.png');
@@ -336,6 +343,7 @@ dialog {
 #equality {
     height:90vh;
     color: #fff;
+    display: none;
 }
 .bgEquality{
     background-image: url('../img/egalite.png');
