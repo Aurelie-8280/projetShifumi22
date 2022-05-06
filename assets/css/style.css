@@ -21,6 +21,7 @@ nav {
     height: 70px;
     padding:0 20px;
     position: sticky;
+    display: none;
 }
 
 nav a {
@@ -85,17 +86,11 @@ nav .endGame {
 
 
 
-
-    
-    
-    
-
-
 /* affichage propositions de combat */
 #game {
     height:90vh;
     color: #fff;
-    /* display: none; */
+    display: none;
 }
 
 #game .bgImgMirror {
