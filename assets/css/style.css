@@ -4,9 +4,20 @@
     margin: 0;
     padding: 0;
 }
+
+.bgRed {
+    background-color: red;
+}
 .bgBlue {
     background-color: #3DBBC9;
 }
+
+.castle {
+    display :flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
 body{
     font-family: 'Walt Disney Script', arial;
     text-transform: uppercase;
@@ -69,6 +80,21 @@ nav .endGame {
 #game .textWelcome {
     font-size:1.5em;
     animation: fadein 3s; 
+    
+}
+
+
+.bgCastle {
+    background-image: url(../img/Chateau.jpg);
+    width:100%;
+    max-height: auto;
+
+
+}
+
+.computerears, .playerears {
+    max-width: 50px;
+
 }
 
 @keyframes fadein {
@@ -303,3 +329,16 @@ nav .endGame {
 
 
 /* score final */
+
+.bgCastle{
+    background-image: url('../img/Chateau.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
