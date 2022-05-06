@@ -46,9 +46,9 @@
     <!--___________________________________ 
         Enter name -->
         <section id="enterName">
+            <div class="gameName">Magic Shifumi</div>
             <div class="  bgColorName">
                 <div class=" castle">
-                    <div class="gameName">Magic Shifumi</div>
                     <img src="assets/img/Mickey.png" alt="image Mickey" class="mickeyHead">
                     <div class="yourPseudo">
                         <label for="Pseudo">Entre ton pseudo</label>
@@ -61,7 +61,7 @@
         </section>
     <!--___________________________________ 
         affichage propositions de combat -->
-    <section id="game" class="container-fluid bgBlue">
+    <!-- <section id="game" class="container-fluid bgBlue">
         <div class="container">
             <div class="row pt-4">
                 <div class="col-12 col-md-6 text-center bgImgMirror order-0 order-md-1">
@@ -86,26 +86,35 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--________________________________
         affichage du résulat du match -->
         <section id="resultGame" class="container-fluid bgBlue">
             
             <div class="container">
                 <div class="row pt-4">
-                    <div class="col-12 col-md-9 text-center bgCloud order-0 order-md-1">
+                    <div class="col-12 col-md-9 text-center order-0 order-md-1">
+                        <div class="bgCloud choiceResult">
+                            <div class="machinChoice"></div>
+                            <div class="computerChoice"></div>
+                            <div class="textGameResult"></div>
+                        </div>
+                        <div class="score">
+                            <div class="machinScore"></div>
+                            <div class="computerScore"></div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-3 lineHands order-1 order-md-0 text-center">
                         <div class="stone">
-                            <img src="assets/img/pierre.png" class="imgHands">
+                            <img src="assets/img/pierre.png" class="imgHands stoneImg">
                             <div class="pt-3">pierre</div>
                         </div>
                         <div class="paper imgHands">
-                            <img src="assets/img/feuille.png" class="imgHands">
+                            <img src="assets/img/feuille.png" class="imgHands paperImg">
                             <div class="pt-3">feuille</div>
                         </div>
                         <div class="scissors ">
-                            <img src="assets/img/ciseaux.png" class="imgHands">
+                            <img src="assets/img/ciseaux.png" class="imgHands scissorsImg">
                             <div class="pt-3">ciseaux</div>
                         </div>
                     </div>
@@ -115,7 +124,7 @@
         </section>
     <!--_________________________________ 
         tu as gagné ! -->
-        <section id="win"class="container-fluid bgBlue">
+        <!-- <section id="win"class="container-fluid bgBlue">
             
             <div class="container">
                 <div class="row pt-4">
@@ -137,10 +146,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     <!--_________________________________ 
         tu as perdu -->
-        <section id="lose"class="container-fluid bgBlue">
+        <!-- <section id="lose"class="container-fluid bgBlue">
             <div class="container">
                 <div class="row pt-4">
                     <div class="col-12 col-md-9 text-center bgLose order-0 order-md-1">
@@ -161,10 +170,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     <!--__________________________________ 
         match nul -->
-        <section id="equality" class="container-fluid bgBlue">
+        <!-- <section id="equality" class="container-fluid bgBlue">
             <div class="container">
                 <div class="row pt-4">
                     <div class="col-12 col-md-9 text-center bgEquality order-0 order-md-1">
@@ -185,7 +194,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     <!--__________________________________ 
         score final -->
     <section id="score">    

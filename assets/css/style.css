@@ -70,6 +70,12 @@ dialog {
 }
 .gameName{
     text-align: center;
+    display:flex;
+    position: absolute;
+    color: #ffffff;
+    padding-left: 310px;
+    font-size: 40px;
+    padding-top: 5px;
 }
 .castle{
     background-image: url('../img/Château.jpg');
@@ -85,14 +91,14 @@ dialog {
     
     opacity: 60%;
     height:50%;
-    margin-right: 160px;
+    margin-right: 90px;
 } 
 
 .yourPseudo{
     
     flex-direction: column;
     display: flex;
-    margin-right: 320px;
+    margin-right: 200px;
     position: absolute;
     color: #ffffff;
 }
