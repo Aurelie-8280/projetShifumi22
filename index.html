@@ -17,48 +17,58 @@
             <nav>
                 <img src="assets/img/close_game.png" alt="image croix" class="endGame">
                 <h1>MAGIC SHIFUMI</h1>
-                <a href="#gameRule">?</a>
+                <button id="myBtn">?</button>
+                
             </nav>
-    </header>
-    <!--______________________________ 
-        modal règle du jeu -->
-    <div  id="gameRule">
-        <div class="modal">
-            <dialog id="rules">
-                <button class="close" type="submit">X</button>
-                <h4>Règlesdu jeu</h4>
-                <p>Bienvenue à Magic Shifumi où tu dois affronter le miroir maléfique !
-                
-                    Tu auras la possibilité de choisir entre 3 reliques représentées par la main de la célèbre souris : la pierre
-                    miraculeuse, le papier sacré ou les ciseaux d’or :
-                
-                    La pierre casse les ciseaux, la pierre gagne!
-                
-                    Les ciseaux coupent le papier, les ciseaux gagnent!
-                
-                    Le papier recouvre la pierre, le papier gagne!
-                
-                    Egalité ? Retente ta chance !
-                </p>
-            </dialog>
-        </div>
-    </div>
-    <!--___________________________________ 
-        Enter name -->
-        <section id="enterName">
-            <div class="gameName">Magic Shifumi</div>
-            <div class="  bgColorName">
-                <div class=" castle">
-                    <img src="assets/img/Mickey.png" alt="image Mickey" class="mickeyHead">
-                    <div class="yourPseudo">
-                        <label for="Pseudo">Entre ton pseudo</label>
-                        <input type="text" name="Pseudo" id="Pseudo" />
-                        <button class="valid" type="submit">Valider</button>
+        </header>
+        <!--___________________________________ 
+            Enter name -->
+            <section id="enterName">
+                <div class="gameName">Magic Shifumi</div>
+                <div class="  bgColorName">
+                    <div class=" castle">
+                        <img src="assets/img/Mickey.png" alt="image Mickey" class="mickeyHead">
+                        <div class="yourPseudo">
+                            <label for="Pseudo">Entre ton pseudo</label>
+                            <input type="text" name="Pseudo" id="Pseudo" />
+                            <button class="valid" type="submit">Valider</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        
-        </section>
+                
+            </section>
+            
+            
+            <!--______________________________ 
+                modal règles du jeu -->
+                
+                
+                <!-- ouvrir la modale -->
+                
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&Chi;</span>
+                    <p>Bienvenue à Magic Shifumi où tu dois affronter le miroir maléfique !</p>
+                                
+                    <p>Tu auras la possibilité de choisir entre 3 reliques représentées par la main de la célèbre souris ;</p>  
+                    <p>la pierre miraculeuse, le papier sacré ou les ciseaux d’or :</p>
+                    
+                    <p>La pierre casse les ciseaux, la pierre gagne!</p>
+                    
+                    <p>Les ciseaux coupent le papier, les ciseaux gagnent!</p>
+                    
+                     <p>Le papier recouvre la pierre, le papier gagne!</p>
+                    
+                    <p> Egalité ? Retente ta chance !</p>
+                  </div>
+                
+                </div>
+
+
     <!--___________________________________ 
         affichage propositions de combat -->
     <!-- <section id="game" class="container-fluid bgBlue">

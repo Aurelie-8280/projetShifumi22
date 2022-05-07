@@ -37,36 +37,99 @@ nav {
     padding:0 20px;
     position: sticky;
 }
-
+/* 
 nav a {
     text-decoration: none;
     color: #fff;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
     color: #fff;
     font-size: 2.1em;
-}
+} */
 
 nav .endGame {
     max-height: 50px;
 }
+nav>button{
+    color: #ffffff;
+    background-color: #3DBBC9;
+    border: none;
+}
 
-/* modal règle du jeu */
-#gameRule {
+
+/* Effet sur le nom du jeu */
+
+h1,.gameName {font-size: 2rem;
+text-align: center;
+color: #fff;
+text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 42px rgb(255, 204, 1),
+    0 0 77px rgb(255, 204, 1),
+    0 0 100px rgb(255, 204, 1);
+animation: lumiere 1s infinite linear;
+}
+@keyframes lumiere {
+0%{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 42px rgb(255, 204, 1),
+    0 0 77px rgb(255, 204, 1),
+    0 0 100px rgb(255, 204, 1);
+}
+50%{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 32px rgb(255, 204, 1),
+    0 0 87px rgb(255, 204, 1),
+    0 0 120px rgb(255, 204, 1);
+}
+} */
+/* .effetneon span {
+font-size: 6rem;
+}
+
+
+/* MODALE REGLES DU JEU */
+
+.modal {
     display: none;
-}
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    
+  }
+  
+  /* contenu de la modale */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid #E6342A;
+    color: #ffcc01;
+    font-weight: bold;
+  }
+  
+  /* Pour fermer la modale*/
+  .close {
+    
+    text-align: end;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
-dialog {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 6px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.25);
-    max-width: 90vw;
-    margin-left: 35%;
-    margin-top:120px;
-}
 
 
 /* enter name */
@@ -103,6 +166,7 @@ dialog {
     opacity: 60%;
     height:50%;
     margin-right: 90px;
+
 } 
 
 .yourPseudo{
@@ -231,6 +295,30 @@ dialog {
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 }
 
 
