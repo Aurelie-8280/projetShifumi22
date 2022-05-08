@@ -50,17 +50,17 @@ stone.addEventListener('click', function(){
     console.log(signComputer)
     if(signComputer == 'stone' ){
         divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
-        textGameResult.innerHTML='Egalité!';
+        textGameResult.innerHTML="<div style='color:blue'>Egalité!</div>";
         
     } else if(signComputer == 'paper' ){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
-        textGameResult.innerHTML='Perdu!';
+        textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
         computerScore.innerHTML=scoreComputer;
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
-        textGameResult.innerHTML='Gagné!';
+        textGameResult.innerHTML="<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
         playerScore.innerHTML= scorePlayer;
 
@@ -86,17 +86,18 @@ paper.addEventListener('click', function(){
 
     if(signComputer == 'paper' ){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
-        textGameResult.innerHTML='Egalité!';
+        textGameResult.innerHTML="<div style='color:blue'>Egalité!</div>";
+        
         
     } else if(signComputer == 'stone' ){
         divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
-        textGameResult.innerHTML='Gagné';
+        textGameResult.innerHTML= "<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
         playerScore.innerHTML= scorePlayer;
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
-        textGameResult.innerHTML='Perdu!';
+        textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
         computerScore.innerHTML=scoreComputer;
 
@@ -119,19 +120,19 @@ scissors.addEventListener('click', function(){
 
     if(signComputer == 'paper' ){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
-        textGameResult.innerHTML='Gagné!';
+        textGameResult.innerHTML="<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
         playerScore.innerHTML= scorePlayer;
         
     } else if(signComputer == 'stone' ){
         divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
-        textGameResult.innerHTML='Perdu';
+        textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
         computerScore.innerHTML=scoreComputer;
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
-        textGameResult.innerHTML='Egalité!';
+        textGameResult.innerHTML="<div style='color:blue'>Egalité!</div>";
 
     }
 })

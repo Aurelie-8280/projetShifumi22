@@ -18,6 +18,7 @@
     align-items: space-around;
 }
 
+
 body{
     font-family: 'Walt Disney Script', arial;
     text-transform: uppercase;
@@ -55,21 +56,29 @@ nav>button{
     color: #ffffff;
     background-color: #3DBBC9;
     border: none;
+    margin-right:30px;
 }
 
 
 /* Effet sur le nom du jeu */
 
-h1,.gameName {font-size: 2rem;
-text-align: center;
-color: #fff;
-text-shadow:
+/* .gameName2{
+    position: absolute;
+    display: none;
+} */
+h1,.gameName{
+    
+    margin-left: 300px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 42px rgb(255, 204, 1),
     0 0 77px rgb(255, 204, 1),
     0 0 100px rgb(255, 204, 1);
-animation: lumiere 1s infinite linear;
+    animation: lumiere 1s infinite linear;
 }
 @keyframes lumiere {
 0%{
@@ -88,7 +97,7 @@ animation: lumiere 1s infinite linear;
     0 0 87px rgb(255, 204, 1),
     0 0 120px rgb(255, 204, 1);
 }
-} */
+} 
 /* .effetneon span {
 font-size: 6rem;
 }
@@ -109,10 +118,10 @@ font-size: 6rem;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
     
-  }
-  
+}
+
   /* contenu de la modale */
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -120,20 +129,34 @@ font-size: 6rem;
     border: 1px solid #E6342A;
     color: #ffcc01;
     font-weight: bold;
-  }
-  
-  /* Pour fermer la modale*/
-  .close {
-    
+}
+
+/* Pour fermer la modale*/
+.close {
     text-align: end;
     font-size: 28px;
     font-weight: bold;
-  }
-
-
+}
 
 /* enter name */
 
+/* section>div{
+    width: 100vw;
+    height: 100vh;
+    background-color :#3DBBC9 ;
+}
+
+#bgImages{
+    background: url('../img/Château.jpg')  no-repeat  left  ;
+    background-size: 50% 100%; 
+    background-color:  #3DBBC9 ;
+
+}
+
+.mickeyHead{
+background-image:  url('../img/Mickey.png')  no-repeat right;  
+
+} */
 
 .bgColorName{
     width: 100vw;
@@ -147,7 +170,7 @@ font-size: 6rem;
     display:flex;
     position: absolute;
     color: #ffffff;
-    padding-left: 310px;
+    padding-right: 10px;
     font-size: 40px;
     padding-top: 5px;
 }
@@ -162,18 +185,49 @@ font-size: 6rem;
     align-items: center;
 }
 .mickeyHead{
-    
+    display:flex;
     opacity: 60%;
-    height:50%;
-    margin-right: 90px;
+    height:65%;
+    margin-left: 500px;
+    margin-top:130px;
 
-} 
+}   
+/* .firstRow{
+    
+    flex-direction: row;
+    width:100vw;
+    height:100vh;
+    background-color: #3DBBC9;
+    
+
+} */
+
+.gameName{
+
+    position: absolute;
+}
+/* .castleA{
+    display: flex;
+    height: 100%;
+    
+
+
+    
+} */
+/* .mickeyHead{
+    display: flex;
+    background-color: #3DBBC9;
+    height: 60%;
+    opacity: 60%;
+    margin-top: 130px;
+} */
 
 .yourPseudo{
     
     flex-direction: column;
     display: flex;
-    margin-right: 200px;
+    margin-left: 500px;
+    margin-top:300px;
     position: absolute;
     color: #ffffff;
 }
@@ -187,7 +241,12 @@ font-size: 6rem;
 
 
 }
+.yourPseudo2{
 
+position: absolute;
+color: #ffffff;
+display: none;
+}
 
 
 /* affichage propositions de combat */
@@ -237,7 +296,22 @@ font-size: 6rem;
     max-width: 50px;
 
 }
-
+/* .machinChoice{
+    margin-top: 300px;
+} */
+.computerChoice{
+    margin-left:130px;
+}
+.bgCloud>.textGameResult{
+    margin-top:0px;
+    
+}
+/* .bgCloud>.computerChoice{
+    
+} */
+.bgCloud>.machinChoice{
+    margin-top: 30px;
+}
 @keyframes fadein {
     0% {
     opacity:0;
@@ -250,17 +324,86 @@ font-size: 6rem;
     }
 }
 
+.textGameResult{
+    font-size:30px;
+    text-align: center;
+    
+    margin-left: 150px;
+
+}
 @media screen and (max-width: 768px) {
     .mickeyHead{
         display: none;
+    }      
+
+    /* .yourPseudo2 {
+        display: block;
+        flex-direction: column;
+        display: flex;
+        margin-left:110px;
+        margin-top:300px;
+        }
+        .yourPseudo2>label{
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .yourPseudo2>button{
+            margin-top: 5px;
+            border-radius: 5px;
+        
+        
+        } */
+    
+    .gameName{
+        display:none;
     }
-
-
-    .yourPseudo {
-        justify-content: center;
+    /* .gameName2{
+        position: absolute;
+        display: block; 
+        font-size: 2rem;
+        margin-left:60px;
+        color: #fff;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(255, 204, 1),
+        0 0 77px rgb(255, 204, 1),
+        0 0 100px rgb(255, 204, 1);
+        animation: lumiere 1s infinite linear;
+    }
+    @keyframes lumiere {
+    0%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(255, 204, 1),
+        0 0 77px rgb(255, 204, 1),
+        0 0 100px rgb(255, 204, 1);
+    }
+    50%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(255, 204, 1),
+        0 0 87px rgb(255, 204, 1),
+        0 0 120px rgb(255, 204, 1);
     }
     
-    #game .lineHands {
+
+
+
+        
+    } */
+    /* #bgImages{
+        background: url('../img/Château.jpg')  no-repeat  ,
+                    url('../img/Mickey.png')  no-repeat ;
+       
+        background-size: 100% 100%,0%; 
+        
+        background-color: #3DBBC9 ;
+    
+    } */
+    #game.lineHands {
         flex-direction: row;
         align-items: center;
         padding-top: 30px;
@@ -289,6 +432,7 @@ font-size: 6rem;
     background-position: center center;
     background-size: contain;
     background-repeat:no-repeat;
+    margin-right: 250px;
     height: 80vh;
     position: relative;
     display: flex;
