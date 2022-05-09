@@ -26,6 +26,17 @@
 
 }
 
+.score {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.computerChoice {
+    margin-bottom: 100px;
+}
+
 
 
 .castle {

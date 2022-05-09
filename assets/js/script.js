@@ -27,6 +27,8 @@ var scorePlayer=0;
 var scoreComputer=0;
 var playerScore=document.querySelector('.machinScore');
 var computerScore=document.querySelector('.computerScore');
+var pourcentagePlayer = document.querySelector('.pourcentagePlayer');
+var pourcentageComputer = document.querySelector('.pourcentageComputer');
 
 // var  timerResult=setTimeout(timerObject,1000);
 textGameResult =document.querySelector('.textGameResult');
@@ -56,13 +58,15 @@ stone.addEventListener('click', function(){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
         textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
-        computerScore.innerHTML=scoreComputer;
+        computerScore.innerHTML="Score ordinateur : " + scoreComputer;
+        pourcentageComputer.innerHTML = Math.round(scoreComputer / (scorePlayer + scoreComputer) * 100) + '%';
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
         textGameResult.innerHTML="<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
-        playerScore.innerHTML= scorePlayer;
+        playerScore.innerHTML= "Score utilisateur : " + scorePlayer;
+        pourcentagePlayer.innerHTML = Math.round(scorePlayer / (scorePlayer + scoreComputer) * 100) + '%';
 
 
     }
@@ -93,15 +97,19 @@ paper.addEventListener('click', function(){
         divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
         textGameResult.innerHTML= "<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
-        playerScore.innerHTML= scorePlayer;
+        playerScore.innerHTML= "Score utilisateur : " + scorePlayer;
+        pourcentagePlayer.innerHTML = Math.round(scorePlayer / (scorePlayer + scoreComputer) * 100) + '%';
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
         textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
-        computerScore.innerHTML=scoreComputer;
+        computerScore.innerHTML="Score ordinateur : " + scoreComputer;
+        pourcentageComputer.innerHTML = Math.round(scoreComputer / (scorePlayer + scoreComputer) * 100) + '%';
 
     }
+    
+    
 })
 
 // écoute du choix de l'utilisateur SCISSORS
@@ -122,19 +130,33 @@ scissors.addEventListener('click', function(){
         divcomputerChoice.innerHTML='<img src="assets/img/feuille.png">'
         textGameResult.innerHTML="<div style='color:yellow'>Gagné!</div>";
         scorePlayer++;
-        playerScore.innerHTML= scorePlayer;
+        playerScore.innerHTML= "Score utilisateur : " + scorePlayer;
+        pourcentagePlayer.innerHTML = Math.round(scorePlayer / (scorePlayer + scoreComputer) * 100) + '%';
         
     } else if(signComputer == 'stone' ){
         divcomputerChoice.innerHTML='<img src="assets/img/pierre.png">'
         textGameResult.innerHTML="<div style='color:red'>Perdu!</div>";
         scoreComputer++;
-        computerScore.innerHTML=scoreComputer;
+        computerScore.innerHTML="Score ordinateur : " + scoreComputer;
+        pourcentageComputer.innerHTML = Math.round(scoreComputer / (scorePlayer + scoreComputer) * 100) + '%';
 
     } else if (signComputer == 'scissors' ){
         divcomputerChoice.innerHTML='<img src="assets/img/ciseaux.png">'
         textGameResult.innerHTML="<div style='color:blue'>Egalité!</div>";
 
     }
+
+
+    // function pourcentage() {
+    //     var scorePlayer = parseInt(document.querySelector('.scorePlayer').textContent);
+    //     var scoreComputer = parseInt(document.querySelector('.scoreComputer').textContent);
+      
+      
+      
+        
+        
+  
+
 })
 
 
@@ -168,6 +190,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 
 
 
