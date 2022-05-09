@@ -1,4 +1,4 @@
-//déclaration des variables générales
+z//déclaration des variables générales
 var buttonValidName = document.querySelector('.valid')
 var enterName = document.querySelector('#enterName')
 var resultGame = document.querySelector('#resultGame')
