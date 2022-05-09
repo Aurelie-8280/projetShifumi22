@@ -5,12 +5,28 @@
     padding: 0;
 }
 
-.bgRed {
+/* .bgRed {
     background-color: red;
-}
+} */
 .bgBlue {
     background-color: #3DBBC9;
 }
+
+.machinChoice {
+    margin-top: 80px;
+
+
+
+}
+
+.textGameResult {
+    margin-top: 80px;
+    margin-left: 80px;
+    font-size: 20px;
+
+}
+
+
 
 .castle {
     display :flex;
@@ -216,7 +232,7 @@ dialog {
 /* affichage du résulat du match */
 
 #resultGame {
-    height:90vh;
+    height:100vh;
     color: #fff;
     display: none;
 }
@@ -225,12 +241,13 @@ dialog {
     background-position: center center;
     background-size: contain;
     background-repeat:no-repeat;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items:center;
+    align-items:space-between;
+    
 }
 
 
@@ -272,6 +289,7 @@ dialog {
     #resultGame .bgCloud {
         height: 65vh;
     }
+ 
     
 }
 
